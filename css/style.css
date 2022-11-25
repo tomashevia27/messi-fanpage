@@ -113,6 +113,9 @@ header nav ul li a:hover{
     flex-direction: column;
     align-items: center;
     border-radius: 8%;
+    box-shadow: 14px 12px 51px -20px rgba(0,0,0,1);
+    -webkit-box-shadow: 14px 12px 51px -20px rgba(0,0,0,1);
+    -moz-box-shadow: 14px 12px 51px -20px rgba(0,0,0,1);
 }
 
 .partidos-contenedor .partido-tarjeta h3 {
@@ -328,6 +331,7 @@ header nav ul li a:hover{
 .hero-estadisticas .estadisticas-contenedor h1{
     font-size: 80px;
     margin-bottom: 30px;
+    color: rgb(48, 106, 129)
 }
 
 .hero-estadisticas .estadisticas-contenedor ul{
@@ -339,7 +343,7 @@ header nav ul li a:hover{
 
 .hero-estadisticas .estadisticas-contenedor ul a{
     text-decoration: none;
-    color: black;
+    color: rgb(48, 106, 129);
     font-size: 35px;
 }
 
@@ -506,6 +510,165 @@ header nav ul li a:hover{
     width: 95%;
 }
 
+/** ----RECORDS.HTML----*/
+.hero-records{
+    background-image: url(../img/fondo-celeste.jpg);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-records .hero-records-titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-records .hero-records-titulo h1{
+    font-size: 100px;
+    margin-bottom: 30px;
+    color: rgb(48, 106, 129)
+}
+
+.hero-records .hero-records-titulo p{
+    width: 90%;
+    color: rgb(48, 106, 129);
+    font-size: 30px;
+}
+
+.contenedor-records{
+    background-image: url(../img/fondo-celeste.jpg);
+    height: 2500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor-records section{
+    box-shadow: 14px 12px 51px -4px rgba(0,0,0,1);
+-webkit-box-shadow: 14px 12px 51px -4px rgba(0,0,0,1);
+-moz-box-shadow: 14px 12px 51px -4px rgba(0,0,0,1);
+}
+
+.balones-de-oro{
+    width: 80%;
+    background-color: black;
+    color: rgb(174, 134, 33);
+    display: flex;
+    align-items: center;
+}
+
+.balones-de-oro .info-bdo{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.balones-de-oro .info-bdo h2{
+    font-size: 40px;
+}
+
+.balones-de-oro .info-bdo p{
+    width: 90%;
+    font-size: 18px;
+}
+
+.balones-de-oro .info-bdo h3{
+    width: 90%;
+    font-size: 25px;
+}
+
+.balones-de-oro .carousel{
+    width: 50vw;
+}
+.balones-de-oro .carousel .carousel-inner img{
+    height: 70vh;
+}
+
+.records-barcelona{
+    width: 80%;
+    background-color: rgb(21, 14, 126);
+    color: rgb(189, 10, 10);
+    display: flex;
+    align-items: center;
+}
+
+.records-barcelona .info-records-barcelona{
+    height: 300px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.records-barcelona .info-records-barcelona h2{
+    font-size: 25px;
+}
+
+.records-barcelona img{
+    width: 700px;
+    height: 500px;
+}
+
+.records-argentina{
+    width: 80%;
+    color: white;
+    background-color: rgb(0, 167, 233);
+    display: flex;
+    align-items: center;
+}
+
+.records-argentina .info-records-argentina{
+    height: 300px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.records-argentina .info-records-argentina h2{
+    font-size: 35px;
+}
+
+.records-argentina img{
+    width: 700px;
+    height: 500px;
+}
+
+.records-individuales{
+    width: 80%;
+    color: white;
+    background-color: rgb(48, 106, 129);
+    display: flex;
+    align-items: center;
+}
+
+.records-individuales .info-records-individuales{
+    height: 300px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.records-individuales .info-records-individuales h2{
+    font-size: 35px;
+}
+
+.records-individuales img{
+    width: 700px;
+    height: 500px;
+}
+
+
 /** ----GALERIA.HTML----*/
 .main-galeria{
     background-image: url(../img/fondo-celeste.jpg);
@@ -616,15 +779,6 @@ header nav ul li a:hover{
 
 .img-hover:hover{
     scale: 1.03;
-}
-
-
-
-/* !ACA LE DOY UN ALTO A LAS SECTION DE galeria.html , carrera.html y record.html PARA QUE NO SE SUPERPONGAN EL HEADER Y EL FOOTER */
-.demas-paginas {
-    height: 90vh;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 14%, rgba(65, 144, 237, 1) 76%);
 }
 
 /*----------FOOTER----------*/
