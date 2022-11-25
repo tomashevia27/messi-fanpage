@@ -331,7 +331,7 @@ header nav ul li a:hover{
 .hero-estadisticas .estadisticas-contenedor h1{
     font-size: 80px;
     margin-bottom: 30px;
-    color: rgb(48, 106, 129)
+    color: rgb(48, 106, 129);
 }
 
 .hero-estadisticas .estadisticas-contenedor ul{
@@ -429,6 +429,16 @@ header nav ul li a:hover{
     width: 100%;
 }
 
+#total:hover p{
+    animation-name: barras-porcentajes;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-direction: normal;
+}
+@keyframes barras-porcentajes{
+    0% {width: 15%;}
+}
+
 /*----ARGENTINA----*/
 #argentina{
     color: white;
@@ -453,6 +463,17 @@ header nav ul li a:hover{
 
 #argentina .gya p{
     width: 85%;
+}
+
+#argentina:hover p{
+    animation-name: barras-porcentajes;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-direction: normal;
+}
+
+@keyframes barras-porcentajes{
+    0% {width: 15%;}
 }
 
 /*----BARCELONA----*/
@@ -484,6 +505,17 @@ header nav ul li a:hover{
     width: 100%;
 }
 
+#barcelona:hover p{
+    animation-name: barras-porcentajes;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-direction: normal;
+}
+
+@keyframes barras-porcentajes{
+    0% {width: 15%;}
+}
+
 /*----PSG----*/
 #psg{
     background-color: rgb(4, 4, 51);
@@ -508,6 +540,18 @@ header nav ul li a:hover{
 
 #psg .gya p{
     width: 95%;
+}
+
+#psg:hover p{
+    animation-name: barras-porcentajes;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-iteration-count: initial;
+}
+
+@keyframes barras-porcentajes{
+    0% {width: 15%;}
 }
 
 /** ----RECORDS.HTML----*/
