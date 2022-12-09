@@ -1,0 +1,1123 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,800;1,200;1,400;1,800&display=swap");
+@import url(../base/_variables.scss);
+@import url(../base/_variables.scss);
+@import url(../base/_variables.scss);
+@import url(../base/_variables.scss);
+@import url(../base/_variables.scss);
+@import url(../base/_variables.scss);
+@import url(../base/_variables.scss);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Raleway', sans-serif; }
+
+header {
+  background-color: rgba(48, 106, 129, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  border-bottom: 3px solid #11b0d8; }
+  header a img {
+    height: 100px;
+    width: 80px;
+    margin-left: 150px; }
+  header nav {
+    display: flex; }
+    header nav ul {
+      list-style: none;
+      margin: 0px;
+      padding: 0px; }
+      header nav ul li {
+        display: inline-block;
+        padding: 5px 20px 5px 20px; }
+        header nav ul li a {
+          text-decoration: none;
+          color: #11b0d8;
+          font-size: 30px;
+          transition: all 0.25s ease; }
+          header nav ul li a:hover {
+            color: white; }
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/messi-prueba-2.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border-bottom: 3px solid #11b0d8;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  .hero .titulo {
+    width: 600px;
+    height: 40vh;
+    text-align: center;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(48, 106, 129, 0.7);
+    border: 3px solid #11b0d8;
+    border-radius: 5%; }
+    .hero .titulo h1 {
+      font-size: 40px;
+      width: 600px;
+      padding: 10px; }
+    .hero .titulo div {
+      width: 600px;
+      padding: 10px;
+      color: white;
+      font-size: 16px; }
+
+.partidos-contenedor {
+  background-color: #accedb;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 500px; }
+  .partidos-contenedor .partidos-tarjeta {
+    border: 3px solid black;
+    background-color: #10106e;
+    width: 400px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8%;
+    box-shadow: 14px 12px 51px -20px black;
+    -webkit-box-shadow: 14px 12px 51px -20px black;
+    -moz-box-shadow: 14px 12px 51px -20px black; }
+    .partidos-contenedor .partidos-tarjeta h3 {
+      text-align: center;
+      font-size: 30px;
+      color: white;
+      width: 100%;
+      height: 10%;
+      padding: 20px;
+      margin-bottom: 20px; }
+    .partidos-contenedor .partidos-tarjeta .resultado {
+      width: 70%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      .partidos-contenedor .partidos-tarjeta .resultado img {
+        height: 80px;
+        width: 80px;
+        margin: 10px; }
+      .partidos-contenedor .partidos-tarjeta .resultado p {
+        font-size: 40px;
+        color: white; }
+    .partidos-contenedor .partidos-tarjeta .datos {
+      color: white;
+      text-align: center;
+      width: 80%; }
+      .partidos-contenedor .partidos-tarjeta .datos p {
+        margin: 20px 0px 20px 0px;
+        padding: 5px;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        width: 100%; }
+
+.noticias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .noticias .noticias-titulo {
+    text-align: center;
+    margin: 30px 0px 30px 0px;
+    font-size: 50px;
+    background-color: #11b0d8;
+    border-top: 4px solid #306a81;
+    border-bottom: 4px solid #306a81;
+    color: white;
+    width: 100vw; }
+  .noticias .noticias-grids {
+    width: 90%;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 30px; }
+    .noticias .noticias-grids .noticias-tarjeta {
+      border: 4px solid #306a81;
+      background-color: #c2e4f1;
+      width: 100%;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0px 11px 11px 0px rgba(0, 0, 0, 0.46);
+      -webkit-box-shadow: 0px 11px 11px 0px rgba(0, 0, 0, 0.46);
+      -moz-box-shadow: 0px 11px 11px 0px rgba(0, 0, 0, 0.46); }
+      .noticias .noticias-grids .noticias-tarjeta h3 {
+        text-align: center;
+        padding: 10px 0px 10px 0px;
+        font-size: 18px;
+        background-color: #6ac8ec;
+        height: 60px;
+        width: 100%; }
+      .noticias .noticias-grids .noticias-tarjeta img {
+        height: 250px;
+        width: 100%; }
+      .noticias .noticias-grids .noticias-tarjeta p {
+        font-size: 14px;
+        padding: 5px; }
+      .noticias .noticias-grids .noticias-tarjeta a {
+        text-decoration: none;
+        color: black;
+        background-color: #6ac8ec;
+        border: 2px solid #306a81;
+        padding: 5px; }
+
+.redes {
+  margin: 50px 0px 50px 0px;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .redes .contenedor-redes {
+    height: 100%;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .redes .contenedor-redes h2 {
+      font-size: 35px;
+      color: #306a81; }
+    .redes .contenedor-redes div a img {
+      width: 120px;
+      margin: 10px; }
+
+.hero-estadisticas {
+  background-image: url(../img/fondo-celeste.jpg);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .hero-estadisticas .estadisticas-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .hero-estadisticas .estadisticas-contenedor h1 {
+      font-size: 80px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      color: #306a81; }
+    .hero-estadisticas .estadisticas-contenedor ul {
+      width: 80%;
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly; }
+      .hero-estadisticas .estadisticas-contenedor ul li a {
+        text-decoration: none;
+        color: #306a81;
+        font-size: 35px; }
+
+.estadisticas-bloque {
+  height: 100vh;
+  padding: 20px 0px 20px 50px; }
+  .estadisticas-bloque .nav-estadisticas {
+    display: flex;
+    justify-content: space-between; }
+    .estadisticas-bloque .nav-estadisticas h2 {
+      font-size: 70px;
+      height: 15%; }
+    .estadisticas-bloque .nav-estadisticas ul {
+      list-style: none;
+      display: flex;
+      margin-right: 50px; }
+      .estadisticas-bloque .nav-estadisticas ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px; }
+        .estadisticas-bloque .nav-estadisticas ul li a {
+          text-decoration: none;
+          color: white;
+          font-size: 25px; }
+  .estadisticas-bloque .div-datos {
+    height: 80%;
+    width: 50%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    .estadisticas-bloque .div-datos h3 {
+      font-size: 40px; }
+    .estadisticas-bloque .div-datos p {
+      font-size: 40px;
+      text-align: right;
+      padding: 5px 20px 10px 5px; }
+
+#total {
+  color: white;
+  background-color: gray; }
+  #total p {
+    background-color: black; }
+  #total .partidos p {
+    width: 85%; }
+  #total .goles p {
+    width: 70%; }
+  #total .asistencias p {
+    width: 31%; }
+  #total .gya p {
+    width: 100%; }
+  #total:hover p {
+    animation-name: barras-porcentajes;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-direction: normal; }
+
+#argentina {
+  color: white;
+  background-color: skyblue; }
+  #argentina p {
+    background-color: #167e9e; }
+  #argentina .partidos p {
+    width: 100%; }
+  #argentina .goles p {
+    width: 55%; }
+  #argentina .asistencias p {
+    width: 30%; }
+  #argentina .gya p {
+    width: 85%; }
+  #argentina:hover p {
+    animation-name: barras-porcentajes;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-direction: normal; }
+
+#barcelona {
+  background-color: #150e7e;
+  color: #bd0a0a; }
+  #barcelona .nav-estadisticas ul li a {
+    color: #bd0a0a; }
+  #barcelona p {
+    background-color: #080636; }
+  #barcelona .partidos p {
+    width: 81%; }
+  #barcelona .goles p {
+    width: 70%; }
+  #barcelona .asistencias p {
+    width: 28%; }
+  #barcelona .gya p {
+    width: 100%; }
+  #barcelona:hover p {
+    animation-name: barras-porcentajes;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-direction: normal; }
+
+#psg {
+  background-color: #040433;
+  color: white; }
+  #psg p {
+    background-color: #b40808; }
+  #psg .partidos p {
+    width: 100%; }
+  #psg .goles p {
+    width: 45%; }
+  #psg .asistencias p {
+    width: 50%; }
+  #psg .gya p {
+    width: 95%; }
+  #psg:hover p {
+    animation-name: barras-porcentajes;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-direction: normal; }
+
+@keyframes barras-porcentajes {
+  0% {
+    width: 15%; } }
+
+.hero-records {
+  background-image: url(../img/fondo-celeste.jpg);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .hero-records .hero-records-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .hero-records .hero-records-titulo h1 {
+      font-size: 80px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      color: #306a81; }
+    .hero-records .hero-records-titulo p {
+      width: 100%;
+      color: #306a81;
+      font-size: 25px;
+      text-align: center;
+      margin-bottom: 0px; }
+
+.contenedor-records {
+  background-image: url(../img/fondo-celeste.jpg);
+  height: 2500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+  .contenedor-records section {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    box-shadow: 14px 12px 51px -4px black;
+    -webkit-box-shadow: 14px 12px 51px -4px black;
+    -moz-box-shadow: 14px 12px 51px -4px black; }
+  .contenedor-records .balones-de-oro {
+    background-color: black;
+    color: #ae8621;
+    text-align: center; }
+    .contenedor-records .balones-de-oro .info-bdo {
+      height: 300px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      .contenedor-records .balones-de-oro .info-bdo h2 {
+        font-size: 35px;
+        font-weight: bold; }
+      .contenedor-records .balones-de-oro .info-bdo p {
+        width: 90%;
+        font-size: 18px; }
+      .contenedor-records .balones-de-oro .info-bdo .p-bdo {
+        font-weight: bold; }
+    .contenedor-records .balones-de-oro .carousel {
+      width: 50%; }
+      .contenedor-records .balones-de-oro .carousel .carousel-inner img {
+        width: 100%; }
+  .contenedor-records .records-barcelona {
+    background-color: #150e7e;
+    color: #bd0a0a; }
+    .contenedor-records .records-barcelona .info-records-barcelona {
+      height: 300px;
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      .contenedor-records .records-barcelona .info-records-barcelona h2 {
+        font-size: 40px;
+        font-weight: bold; }
+    .contenedor-records .records-barcelona img {
+      width: 700px;
+      height: 500px; }
+  .contenedor-records .records-argentina {
+    color: white;
+    background-color: #00a7e9; }
+    .contenedor-records .records-argentina .info-records-argentina {
+      height: 300px;
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      .contenedor-records .records-argentina .info-records-argentina h2 {
+        font-size: 40px;
+        font-weight: bold; }
+    .contenedor-records .records-argentina img {
+      width: 700px;
+      height: 500px; }
+  .contenedor-records .records-individuales {
+    color: white;
+    background-color: #306a81; }
+    .contenedor-records .records-individuales .info-records-individuales {
+      height: 300px;
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      .contenedor-records .records-individuales .info-records-individuales h2 {
+        font-size: 40px;
+        font-weight: bold; }
+    .contenedor-records .records-individuales img {
+      width: 700px;
+      height: 500px; }
+
+.main-galeria {
+  background-image: url(../img/fondo-celeste.jpg); }
+  .main-galeria .titulo-galeria {
+    text-align: center;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: end; }
+    .main-galeria .titulo-galeria h1 {
+      width: 100vw;
+      font-size: 50px;
+      padding: 10px;
+      color: #306a81; }
+  .main-galeria .galeria-grids {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 18px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0); }
+    .main-galeria .galeria-grids div {
+      text-align: center;
+      font-size: 30px; }
+      .main-galeria .galeria-grids div img {
+        width: 100%;
+        height: 100%; }
+    .main-galeria .galeria-grids .imagen-1 {
+      grid-column: 1/3;
+      grid-row: 1/3; }
+    .main-galeria .galeria-grids .imagen-2 {
+      grid-column: 3/5;
+      grid-row: 1/3; }
+    .main-galeria .galeria-grids .imagen-3 {
+      grid-column: 1/3;
+      grid-row: 3/5; }
+    .main-galeria .galeria-grids .imagen-4 {
+      grid-column: 4/6;
+      grid-row: 3/5; }
+    .main-galeria .galeria-grids .imagen-5 {
+      grid-column: 5/7;
+      grid-row: 1/3; }
+    .main-galeria .galeria-grids .imagen-6 {
+      grid-column: 1/4;
+      grid-row: 5/8; }
+    .main-galeria .galeria-grids .imagen-7 {
+      grid-column: 5/7;
+      grid-row: 8/10; }
+    .main-galeria .galeria-grids .imagen-8 {
+      grid-column: 1/3;
+      grid-row: 8/10; }
+    .main-galeria .galeria-grids .imagen-9 {
+      grid-column: 6/7;
+      grid-row: 3/5; }
+    .main-galeria .galeria-grids .imagen-10 {
+      grid-column: 4/7;
+      grid-row: 5/6; }
+    .main-galeria .galeria-grids .imagen-11 {
+      grid-column: 3/4;
+      grid-row: 3/5; }
+    .main-galeria .galeria-grids .imagen-12 {
+      grid-column: 3/5;
+      grid-row: 8/10; }
+    .main-galeria .galeria-grids .imagen-13 {
+      grid-column: 4/7;
+      grid-row: 6/8; }
+    .main-galeria .galeria-grids .img-hover {
+      transition: all 0.5s; }
+      .main-galeria .galeria-grids .img-hover:hover {
+        scale: 1.03; }
+
+.section-contacto {
+  background-image: url(../img/messi-prueba-1.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  height: 115vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .section-contacto .contenedor-form {
+    background-color: rgba(48, 106, 129, 0.7);
+    border: 3px solid #11b0d8;
+    border-radius: 5%;
+    width: 40vw; }
+    .section-contacto .contenedor-form h1 {
+      text-align: center;
+      padding-top: 5px; }
+    .section-contacto .contenedor-form .subtitulo {
+      font-size: 16px;
+      text-align: center;
+      margin: 5px 0px 10px 0px;
+      padding-bottom: 5px;
+      border-bottom: 3px solid #11b0d8; }
+    .section-contacto .contenedor-form form div {
+      padding: 5px; }
+    .section-contacto .contenedor-form form .pais {
+      display: inline-block; }
+    .section-contacto .contenedor-form .agradecimiento {
+      text-align: center;
+      font-size: 18px; }
+
+.footer-contenedor {
+  background-color: #306a81;
+  color: white;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .footer-contenedor .info-footer {
+    padding-left: 10px; }
+  .footer-contenedor .tomas {
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 10px; }
+    .footer-contenedor .tomas a img {
+      width: 60px;
+      height: 60px; }
+  .footer-contenedor h4 {
+    font-size: 18px; }
+  .footer-contenedor p {
+    font-size: 16px; }
+
+@media screen and (max-width: 1330px) {
+  header a img {
+    margin-left: 120px; }
+  .partidos-contenedor .partidos-tarjeta .resultado {
+    width: 300px; } }
+
+@media screen and (max-width: 1161px) {
+  header {
+    flex-direction: column;
+    height: 170px;
+    padding-top: 10px; }
+  header a img {
+    margin-left: 0px; }
+  .hero {
+    justify-content: center;
+    align-items: center; }
+  .hero .titulo {
+    margin-right: 0px;
+    height: 220px; }
+  .partidos-contenedor .partidos-tarjeta {
+    height: 350px; }
+  .noticias .noticias-grids {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px; } }
+
+@media screen and (max-width: 1065px) {
+  .partidos-contenedor {
+    flex-direction: column;
+    height: 800px; }
+  .partidos-contenedor .partidos-tarjeta h3 {
+    font-size: 25px; }
+  .partidos-contenedor .partidos-tarjeta .resultado img {
+    height: 60px;
+    width: 60px; }
+  .footer-contenedor h4 {
+    font-size: 16px; }
+  .footer-contenedor p {
+    font-size: 14px; } }
+
+@media screen and (max-width: 931px) {
+  header nav ul li a {
+    font-size: 25px; }
+  header nav ul li {
+    padding: 5px 10px 5px 10px; }
+  header a img {
+    height: 80px;
+    width: 65px; }
+  header {
+    height: 140px; }
+  .footer-contenedor .tomas {
+    width: 300px; }
+  .footer-contenedor .tomas a img {
+    width: 50px;
+    height: 50px; } }
+
+@media screen and (max-width: 850px) {
+  .noticias .noticias-grids {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 60%; }
+  .footer-contenedor {
+    flex-direction: column;
+    height: 120px; }
+  .footer-contenedor .info-footer {
+    padding-left: 0px;
+    padding-top: 10px; }
+  .footer-contenedor h4 {
+    text-align: center; }
+  .footer-contenedor .tomas {
+    padding-right: 0px;
+    padding-bottom: 10px; } }
+
+@media screen and (max-width: 712px) {
+  header nav ul li a {
+    font-size: 20px; }
+  header nav ul li {
+    padding: 0px 10px 5px 10px; }
+  header {
+    height: 130px; } }
+
+@media screen and (max-width: 680px) {
+  .hero .titulo {
+    width: 500px;
+    height: 170px; }
+  .hero .titulo h1 {
+    font-size: 30px;
+    width: 500px; }
+  .hero .titulo div {
+    width: 500px;
+    font-size: 14px; } }
+
+@media screen and (max-width: 593px) {
+  header nav ul li a {
+    font-size: 15px; }
+  header a img {
+    height: 60px;
+    width: 50px; }
+  header {
+    height: 100px; }
+  .hero .titulo {
+    width: 450px;
+    height: 155px; }
+  .hero .titulo h1 {
+    font-size: 25px;
+    width: 450px; }
+  .hero .titulo div {
+    width: 450px;
+    font-size: 13px;
+    padding: 5px; }
+  .partidos-contenedor {
+    height: 650px; }
+  .partidos-contenedor .partidos-tarjeta {
+    width: 300px;
+    height: 300px; }
+  .partidos-contenedor .partidos-tarjeta h3 {
+    font-size: 20px; }
+  .partidos-contenedor .partidos-tarjeta .resultado img {
+    height: 50px;
+    width: 50px; }
+  .partidos-contenedor .partidos-tarjeta .datos p {
+    margin: 10px 0px 10px 0px; }
+  .noticias .noticias-titulo {
+    margin: 20px 0px 20px 0px;
+    font-size: 35px; }
+  .noticias .noticias-grids {
+    width: 70%; }
+  .noticias .noticias-grids .noticias-tarjeta {
+    height: 400px; }
+  .noticias .noticias-grids .noticias-tarjeta img {
+    height: 200px; }
+  .noticias .noticias-grids .noticias-tarjeta p {
+    font-size: 12px; }
+  .noticias .noticias-grids .noticias-tarjeta a {
+    padding: 3px;
+    font-size: 12px; }
+  .redes {
+    margin: 30px 0 0 0;
+    height: 20vh; }
+  .redes .contenedor-redes h2 {
+    font-size: 25px; }
+  .redes .contenedor-redes div a img {
+    width: 90px; }
+  .footer-contenedor {
+    height: 130px; }
+  .footer-contenedor p {
+    width: 350px;
+    text-align: center; }
+  .footer-contenedor .tomas a img {
+    width: 40px;
+    height: 40px; } }
+
+@media screen and (max-width: 506px) {
+  .noticias .noticias-grids .noticias-tarjeta h3 {
+    font-size: 16px;
+    height: 50px; } }
+
+@media screen and (max-width: 473px) {
+  header nav ul li a {
+    font-size: 10px; }
+  header a img {
+    height: 40px;
+    width: 30px; }
+  header {
+    height: 80px; }
+  .hero .titulo {
+    width: 350px;
+    height: 130px; }
+  .hero .titulo h1 {
+    font-size: 20px;
+    width: 350px; }
+  .hero .titulo div {
+    width: 350px;
+    font-size: 10px;
+    padding: 5px; } }
+
+@media screen and (max-width: 450px) {
+  .noticias .noticias-grids .noticias-tarjeta h3 {
+    font-size: 14px; }
+  .noticias .noticias-grids .noticias-tarjeta p {
+    font-size: 11px; } }
+
+@media screen and (max-width: 395px) {
+  .noticias .noticias-grids {
+    width: 80%; }
+  .noticias .noticias-grids .noticias-tarjeta h3 {
+    font-size: 12px;
+    height: 40px; }
+  .redes {
+    margin: 20px 0 0 0; }
+  .redes .contenedor-redes h2 {
+    font-size: 20px; }
+  .redes .contenedor-redes div a img {
+    width: 80px;
+    margin: 5px; } }
+
+@media screen and (max-width: 380px) {
+  .hero .titulo {
+    width: 300px;
+    height: 130px; }
+  .hero .titulo h1 {
+    font-size: 18px;
+    width: 300px; }
+  .hero .titulo div {
+    width: 300px;
+    font-size: 8px;
+    padding: 2px; }
+  .partidos-contenedor {
+    height: 600px; }
+  .partidos-contenedor .partidos-tarjeta {
+    width: 250px;
+    height: 250px; }
+  .partidos-contenedor .partidos-tarjeta h3 {
+    font-size: 20px; }
+  .partidos-contenedor .partidos-tarjeta .resultado {
+    width: 200px; }
+  .partidos-contenedor .partidos-tarjeta .resultado img {
+    height: 40px;
+    width: 40px; }
+  .partidos-contenedor .partidos-tarjeta .resultado p {
+    font-size: 30px; }
+  .partidos-contenedor .partidos-tarjeta .datos p {
+    margin: 10px 0px 10px 0px;
+    font-size: 11px; }
+  .noticias .noticias-titulo {
+    font-size: 28px; } }
+
+@media screen and (max-width: 354px) {
+  header nav ul li a {
+    font-size: 8px; }
+  header a img {
+    height: 40px;
+    width: 30px; }
+  header {
+    height: 70px;
+    padding-top: 5px; }
+  .footer-contenedor {
+    height: 110px; }
+  .footer-contenedor h4 {
+    font-size: 14px; }
+  .footer-contenedor p {
+    font-size: 12px;
+    width: 320px; }
+  .footer-contenedor .tomas {
+    width: 250px; }
+  .footer-contenedor .tomas a img {
+    width: 30px;
+    height: 30px; } }
+
+@media screen and (max-width: 1250px) {
+  .hero-estadisticas .estadisticas-contenedor h1 {
+    font-size: 70px; } }
+
+@media screen and (max-width: 1080px) {
+  .hero-estadisticas .estadisticas-contenedor h1 {
+    font-size: 60px; } }
+
+@media screen and (max-width: 931px) {
+  .hero-estadisticas .estadisticas-contenedor h1 {
+    font-size: 50px; }
+  .hero-estadisticas .estadisticas-contenedor ul li a {
+    font-size: 25px; }
+  .estadisticas-bloque .nav-estadisticas h2 {
+    font-size: 55px; }
+  .estadisticas-bloque .nav-estadisticas ul {
+    margin-right: 35px; }
+  .estadisticas-bloque .nav-estadisticas ul li a {
+    font-size: 20px; }
+  .estadisticas-bloque .div-datos {
+    width: 100%;
+    padding-right: 50px; }
+  .estadisticas-bloque .div-datos h3 {
+    font-size: 30px; }
+  .estadisticas-bloque .div-datos p {
+    font-size: 30px; } }
+
+@media screen and (max-width: 815px) {
+  .estadisticas-bloque {
+    padding: 20px 0px 20px 35px; }
+  .estadisticas-bloque .nav-estadisticas h2 {
+    font-size: 45px; }
+  .estadisticas-bloque .nav-estadisticas ul {
+    margin-right: 25px; }
+  .estadisticas-bloque .nav-estadisticas ul li a {
+    font-size: 15px; }
+  .estadisticas-bloque .div-datos {
+    padding-right: 35px; } }
+
+@media screen and (max-width: 780px) {
+  .hero-estadisticas .estadisticas-contenedor h1 {
+    font-size: 40px;
+    margin-bottom: 20px; }
+  .hero-estadisticas .estadisticas-contenedor ul li a {
+    font-size: 20px; } }
+
+@media screen and (max-width: 670px) {
+  .estadisticas-bloque {
+    padding: 20px 0px 20px 25px; }
+  .estadisticas-bloque .nav-estadisticas h2 {
+    font-size: 35px; }
+  .estadisticas-bloque .nav-estadisticas ul li {
+    margin: 5px; }
+  .estadisticas-bloque .div-datos h3 {
+    font-size: 25px; }
+  .estadisticas-bloque .div-datos p {
+    font-size: 25px; } }
+
+@media screen and (max-width: 620px) {
+  .hero-estadisticas .estadisticas-contenedor h1 {
+    font-size: 35px;
+    margin-bottom: 15px; }
+  .hero-estadisticas .estadisticas-contenedor ul {
+    width: 100%; } }
+
+@media screen and (max-width: 550px) {
+  .hero-estadisticas .estadisticas-contenedor h1 {
+    font-size: 25px;
+    margin-bottom: 10px; }
+  .hero-estadisticas .estadisticas-contenedor ul li a {
+    font-size: 15px; }
+  .estadisticas-bloque .nav-estadisticas h2 {
+    font-size: 25px; }
+  .estadisticas-bloque .nav-estadisticas ul {
+    margin-right: 15px; }
+  .estadisticas-bloque .nav-estadisticas ul li a {
+    font-size: 12px; }
+  .estadisticas-bloque .div-datos h3 {
+    font-size: 20px; }
+  .estadisticas-bloque .div-datos p {
+    font-size: 20px; } }
+
+@media screen and (max-width: 420px) {
+  .estadisticas-bloque .nav-estadisticas h2 {
+    font-size: 20px; }
+  .estadisticas-bloque .nav-estadisticas ul li a {
+    font-size: 10px; }
+  .estadisticas-bloque .div-datos h3 {
+    font-size: 15px; }
+  .estadisticas-bloque .div-datos p {
+    font-size: 15px;
+    padding: 5px 10px 5px 5px; } }
+
+@media screen and (max-width: 400px) {
+  .hero-estadisticas .estadisticas-contenedor h1 {
+    font-size: 20px;
+    margin-bottom: 10px; }
+  .hero-estadisticas .estadisticas-contenedor ul li a {
+    font-size: 12px; } }
+
+@media screen and (max-width: 360px) {
+  .estadisticas-bloque .nav-estadisticas h2 {
+    font-size: 18px; }
+  .estadisticas-bloque .nav-estadisticas ul {
+    margin-right: 10px; }
+  .hero-estadisticas .estadisticas-contenedor ul li {
+    margin: 2px; }
+  .hero-estadisticas .estadisticas-contenedor ul li a {
+    font-size: 10px; } }
+
+@media screen and (max-width: 1755px) {
+  .contenedor-records .balones-de-oro .info-bdo h2 {
+    width: 70%; } }
+
+@media screen and (max-width: 1270px) {
+  .hero-records .hero-records-titulo h1 {
+    font-size: 70px;
+    margin-bottom: 25px; }
+  .hero-records .hero-records-titulo p {
+    font-size: 20px; } }
+
+@media screen and (max-width: 1080px) {
+  .hero-records .hero-records-titulo h1 {
+    font-size: 60px;
+    margin-bottom: 20px; } }
+
+@media screen and (max-width: 931px) {
+  .hero-records .hero-records-titulo h1 {
+    font-size: 50px; }
+  .hero-records .hero-records-titulo p {
+    font-size: 15px; } }
+
+@media screen and (max-width: 770px) {
+  .hero-records .hero-records-titulo h1 {
+    font-size: 40px;
+    margin-bottom: 15px; }
+  .hero-records .hero-records-titulo p {
+    width: 60%;
+    font-size: 20px; } }
+
+@media screen and (max-width: 620px) {
+  .hero-records .hero-records-titulo h1 {
+    font-size: 30px;
+    margin-bottom: 10px; }
+  .hero-records .hero-records-titulo p {
+    width: 60%;
+    font-size: 15px; } }
+
+@media screen and (max-width: 565px) {
+  .hero-records .hero-records-titulo p {
+    width: 70%; } }
+
+@media screen and (max-width: 482px) {
+  .hero-records .hero-records-titulo h1 {
+    font-size: 25px;
+    margin-bottom: 5px; }
+  .hero-records .hero-records-titulo p {
+    font-size: 12px; } }
+
+@media screen and (max-width: 400px) {
+  .hero-records .hero-records-titulo h1 {
+    font-size: 20px;
+    margin-bottom: 5px; }
+  .hero-records .hero-records-titulo p {
+    font-size: 10px; } }
+
+@media screen and (max-width: 1300px) {
+  .main-galeria .galeria-grids {
+    gap: 12px; } }
+
+@media screen and (max-width: 1161px) {
+  .main-galeria .titulo-galeria {
+    height: 280px; } }
+
+@media screen and (max-width: 920px) {
+  .main-galeria .titulo-galeria {
+    height: 240px; }
+  .main-galeria .titulo-galeria h1 {
+    font-size: 40px; }
+  .main-galeria .galeria-grids {
+    gap: 10px; } }
+
+@media screen and (max-width: 740px) {
+  .main-galeria .titulo-galeria {
+    height: 200px; }
+  .main-galeria .titulo-galeria h1 {
+    font-size: 35px; }
+  .main-galeria .galeria-grids {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px; }
+  .main-galeria .galeria-grids .imagen-1 {
+    grid-column: 1/3;
+    grid-row: 1/3; }
+  .main-galeria .galeria-grids .imagen-2 {
+    grid-column: 3/5;
+    grid-row: 1/3; }
+  .main-galeria .galeria-grids .imagen-3 {
+    grid-column: 1/3;
+    grid-row: 3/5; }
+  .main-galeria .galeria-grids .imagen-4 {
+    grid-column: 3/5;
+    grid-row: 5/7; }
+  .main-galeria .galeria-grids .imagen-5 {
+    grid-column: 3/5;
+    grid-row: 3/5; }
+  .main-galeria .galeria-grids .imagen-6 {
+    grid-column: 1/3;
+    grid-row: 5/7; }
+  .main-galeria .galeria-grids .imagen-7 {
+    grid-column: 3/5;
+    grid-row: 11/14; }
+  .main-galeria .galeria-grids .imagen-8 {
+    display: none; }
+  .main-galeria .galeria-grids .imagen-9 {
+    grid-column: 4/5;
+    grid-row: 7/9; }
+  .main-galeria .galeria-grids .imagen-10 {
+    grid-column: 1/4;
+    grid-row: 7/8; }
+  .main-galeria .galeria-grids .imagen-11 {
+    grid-column: 4/5;
+    grid-row: 9/11; }
+  .main-galeria .galeria-grids .imagen-12 {
+    grid-column: 1/3;
+    grid-row: 11/14; }
+  .main-galeria .galeria-grids .imagen-13 {
+    grid-column: 1/4;
+    grid-row: 8/11; }
+  .main-galeria .galeria-grids .img-hover:hover {
+    scale: 1.03; } }
+
+@media screen and (max-width: 650px) {
+  .main-galeria .titulo-galeria h1 {
+    font-size: 30px; } }
+
+@media screen and (max-width: 560px) {
+  .main-galeria .titulo-galeria {
+    height: 180px; }
+  .main-galeria .titulo-galeria h1 {
+    font-size: 25px; } }
+
+@media screen and (max-width: 470px) {
+  .main-galeria .titulo-galeria {
+    height: 150px; }
+  .main-galeria .titulo-galeria h1 {
+    font-size: 20px; }
+  .main-galeria .galeria-grids {
+    grid-template-columns: repeat(2, 1fr); }
+  .main-galeria .galeria-grids .imagen-1 {
+    grid-column: 1/3;
+    grid-row: 1/3; }
+  .main-galeria .galeria-grids .imagen-2 {
+    grid-column: 1/3;
+    grid-row: 3/5; }
+  .main-galeria .galeria-grids .imagen-3 {
+    grid-column: 1/3;
+    grid-row: 7/9; }
+  .main-galeria .galeria-grids .imagen-4 {
+    grid-column: 1/3;
+    grid-row: 9/11; }
+  .main-galeria .galeria-grids .imagen-5 {
+    grid-column: 1/3;
+    grid-row: 5/7; }
+  .main-galeria .galeria-grids .imagen-6 {
+    grid-column: 1/3;
+    grid-row: 14/16; }
+  .main-galeria .galeria-grids .imagen-7 {
+    grid-column: 1/3;
+    grid-row: 19/21; }
+  .main-galeria .galeria-grids .imagen-8 {
+    display: none; }
+  .main-galeria .galeria-grids .imagen-9 {
+    grid-column: 1/2;
+    grid-row: 11/13; }
+  .main-galeria .galeria-grids .imagen-10 {
+    grid-column: 1/3;
+    grid-row: 13/14; }
+  .main-galeria .galeria-grids .imagen-11 {
+    grid-column: 2/3;
+    grid-row: 11/13; }
+  .main-galeria .galeria-grids .imagen-12 {
+    grid-column: 1/3;
+    grid-row: 19/21; }
+  .main-galeria .galeria-grids .imagen-13 {
+    grid-column: 1/3;
+    grid-row: 16/19; } }
+
+@media screen and (max-width: 380px) {
+  .main-galeria .titulo-galeria {
+    height: 130px; }
+  .main-galeria .titulo-galeria h1 {
+    font-size: 15px; } }

@@ -104,7 +104,7 @@ header nav ul li a:hover{
     height: 500px;
 }
 
-.partidos-contenedor .partido-tarjeta {
+.partidos-contenedor .partidos-tarjeta {
     border: 3px solid black;
     background-color: rgb(16, 16, 110);
     width: 400px;
@@ -118,7 +118,7 @@ header nav ul li a:hover{
     -moz-box-shadow: 14px 12px 51px -20px rgba(0,0,0,1);
 }
 
-.partidos-contenedor .partido-tarjeta h3 {
+.partidos-contenedor .partidos-tarjeta h3 {
     text-align: center;
     font-size: 30px;
     color: white;
@@ -128,31 +128,31 @@ header nav ul li a:hover{
     margin-bottom: 20px;
 }
 
-.partidos-contenedor .partido-tarjeta .resultado {
+.partidos-contenedor .partidos-tarjeta .resultado {
     width: 70%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.partidos-contenedor .partido-tarjeta .resultado img {
+.partidos-contenedor .partidos-tarjeta .resultado img {
     height: 80px;
     width: 80px;
     margin: 10px;
 }
 
-.partidos-contenedor .partido-tarjeta .resultado p {
+.partidos-contenedor .partidos-tarjeta .resultado p {
     font-size: 40px;
     color: white;
 }
 
-.partidos-contenedor .partido-tarjeta .datos {
+.partidos-contenedor .partidos-tarjeta .datos {
     color: white;
     text-align: center;
     width: 80%;
 }
 
-.partidos-contenedor .partido-tarjeta .datos p {
+.partidos-contenedor .partidos-tarjeta .datos p {
     margin: 20px 0px 20px 0px;
     padding: 5px;
     border-top: 1px solid white;
@@ -189,11 +189,7 @@ header nav ul li a:hover{
     gap: 30px;
 }
 
-.noticias .noticias-grids div{
-    border: 2px solid black;
-}
-
-.noticias .noticias-grids .noticia-tarjeta{
+.noticias .noticias-grids .noticias-tarjeta{
     border: 4px solid rgb(4, 95, 131);
     background-color: rgb(194, 228, 241);
     width: 100%;
@@ -206,7 +202,7 @@ header nav ul li a:hover{
 -moz-box-shadow: 0px 11px 11px 0px rgba(0,0,0,0.46);
 }
 
-.noticias .noticias-grids h3 {
+.noticias .noticias-grids .noticias-tarjeta h3 {
     text-align: center;
     padding: 10px 0px 10px 0px;
     font-size: 18px;
@@ -215,17 +211,17 @@ header nav ul li a:hover{
     width: 100%;
 }
 
-.noticias .noticias-grids img {
+.noticias .noticias-grids .noticias-tarjeta img {
     height: 250px;
     width: 100%;
 }
 
-.noticias .noticias-grids p {
+.noticias .noticias-grids .noticias-tarjeta p {
     font-size: 14px;
     padding: 5px;
 }
 
-.noticias .noticias-grids a {
+.noticias .noticias-grids .noticias-tarjeta a {
     text-decoration: none;
     color: black;
     background-color: rgb(106, 200, 236);
@@ -254,7 +250,6 @@ header nav ul li a:hover{
 .redes .contenedor-redes h2 {
     font-size: 35px;
     color: rgb(4, 75, 104);
-    ;
 }
 
 .redes .contenedor-redes img {
@@ -298,11 +293,11 @@ header nav ul li a:hover{
     border-bottom: 3px solid rgb(17, 176, 216);
 }
 
-.section-contacto .contenedor-form .formulario div {
+.section-contacto .contenedor-form form div {
     padding: 5px;
 }
 
-.section-contacto .contenedor-form .formulario .pais {
+.section-contacto .contenedor-form form .pais {
     display: inline-block;
 }
 
@@ -330,6 +325,7 @@ header nav ul li a:hover{
 
 .hero-estadisticas .estadisticas-contenedor h1{
     font-size: 80px;
+    font-weight: bold;
     margin-bottom: 30px;
     color: rgb(48, 106, 129);
 }
@@ -355,20 +351,17 @@ header nav ul li a:hover{
 .estadisticas-bloque .nav-estadisticas{
     display: flex;
     justify-content: space-between;
-
 }
 
 .estadisticas-bloque h2{
     font-size: 70px;
     height: 15%;
-
 }
 
 .estadisticas-bloque ul{
     list-style: none;
     display: flex;
     margin-right: 50px;
-
 }
 
 .estadisticas-bloque ul li{
@@ -387,10 +380,14 @@ header nav ul li a:hover{
 .estadisticas-bloque .div-datos{
     height: 80%;
     width: 50%;
-    font-size: 30px;
+    font-size: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.estadisticas-bloque h3{
+    font-size: 40px;
 }
 
 .estadisticas-bloque p{
@@ -399,9 +396,6 @@ header nav ul li a:hover{
     padding: 5px 20px 10px 5px;
 }
 
-.estadisticas-bloque h3{
-    font-size: 40px;
-}
 
 /*----TOTAL----*/
 #total{
@@ -571,13 +565,14 @@ header nav ul li a:hover{
 }
 
 .hero-records .hero-records-titulo h1{
-    font-size: 100px;
+    font-size: 80px;
+    font-weight: bold;
     margin-bottom: 30px;
     color: rgb(48, 106, 129)
 }
 
 .hero-records .hero-records-titulo p{
-    width: 90%;
+    width: 100%;
     color: rgb(48, 106, 129);
     font-size: 30px;
 }
@@ -742,6 +737,11 @@ header nav ul li a:hover{
     background-color: rgba(255, 255, 255, 0);
 }
 
+.galeria-grids div{
+    text-align: center;
+    font-size: 30px;
+}
+
 .galeria-grids div img{
     width: 100%;
     height: 100%;
@@ -812,11 +812,6 @@ header nav ul li a:hover{
     grid-row: 6/8;
 }
 
-.galeria-grids div{
-    text-align: center;
-    font-size: 30px;
-}
-
 .img-hover{
     transition: all 0.5s;
 }
@@ -869,7 +864,7 @@ header nav ul li a:hover{
         margin-left: 120px;
     }
 
-    .partidos-contenedor .partido-tarjeta .resultado{
+    .partidos-contenedor .partidos-tarjeta .resultado{
         width: 300px;
     }
 }
@@ -892,7 +887,7 @@ header nav ul li a:hover{
         margin-right: 0px;
         height: 220px;
     }
-    .partidos-contenedor .partido-tarjeta{
+    .partidos-contenedor .partidos-tarjeta{
         height: 350px;
     }
 
@@ -907,10 +902,10 @@ header nav ul li a:hover{
         flex-direction: column;
         height: 800px;
     }
-    .partidos-contenedor .partido-tarjeta h3{
+    .partidos-contenedor .partidos-tarjeta h3{
         font-size: 25px;
     }
-    .partidos-contenedor .partido-tarjeta .resultado img{
+    .partidos-contenedor .partidos-tarjeta .resultado img{
         height: 60px;
         width: 60px;
     }
@@ -1028,18 +1023,18 @@ header nav ul li a:hover{
     .partidos-contenedor{
         height: 650px;
     }
-    .partidos-contenedor .partido-tarjeta{
+    .partidos-contenedor .partidos-tarjeta{
         width: 300px;
         height: 300px;
     }
-    .partidos-contenedor .partido-tarjeta h3{
+    .partidos-contenedor .partidos-tarjeta h3{
         font-size: 20px;
     }
-    .partidos-contenedor .partido-tarjeta .resultado img{
+    .partidos-contenedor .partidos-tarjeta .resultado img{
         height: 50px;
         width: 50px;
     }
-    .partidos-contenedor .partido-tarjeta .datos p{
+    .partidos-contenedor .partidos-tarjeta .datos p{
         margin: 10px 0px 10px 0px;
     }
 
@@ -1170,24 +1165,24 @@ header nav ul li a:hover{
     .partidos-contenedor{
         height: 600px;
     }
-    .partidos-contenedor .partido-tarjeta{
+    .partidos-contenedor .partidos-tarjeta{
         width: 250px;
         height: 250px;
     }
-    .partidos-contenedor .partido-tarjeta h3{
+    .partidos-contenedor .partidos-tarjeta h3{
         font-size: 20px;
     }
-    .partidos-contenedor .partido-tarjeta .resultado{
+    .partidos-contenedor .partidos-tarjeta .resultado{
         width: 200px;
     }
-    .partidos-contenedor .partido-tarjeta .resultado p{
+    .partidos-contenedor .partidos-tarjeta .resultado p{
         font-size: 30px;
     }
-    .partidos-contenedor .partido-tarjeta .resultado img{
+    .partidos-contenedor .partidos-tarjeta .resultado img{
         height: 40px;
         width: 40px;
     }
-    .partidos-contenedor .partido-tarjeta .datos p{
+    .partidos-contenedor .partidos-tarjeta .datos p{
         margin: 10px 0px 10px 0px;
         font-size: 11px;
     }

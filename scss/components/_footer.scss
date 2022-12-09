@@ -1,0 +1,31 @@
+@import url(../base/_variables.scss);
+
+.footer-contenedor{
+    background-color: $celeste-oscuro;
+    color: white;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .info-footer{
+        padding-left: 10px;
+    }
+    .tomas{
+        width: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-right: 10px;
+        a{
+            img{    
+                width: 60px;
+                height: 60px;}
+        }
+    }
+    h4{
+        font-size: 18px;
+    }
+    p{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,138 @@
+@import url(../base/_variables.scss);
+
+.hero-records{
+    background-image: url(../img/fondo-celeste.jpg);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .hero-records-titulo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            font-size: 80px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: rgb(48, 106, 129)
+        }
+        p{
+            width: 100%;
+            color: rgb(48, 106, 129);
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.contenedor-records{
+    background-image: url(../img/fondo-celeste.jpg);
+    height: 2500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    section{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        box-shadow: 14px 12px 51px -4px rgba(0,0,0,1);
+        -webkit-box-shadow: 14px 12px 51px -4px rgba(0,0,0,1);
+        -moz-box-shadow: 14px 12px 51px -4px rgba(0,0,0,1);
+    }
+    .balones-de-oro{
+        background-color: black;
+        color: rgb(174, 134, 33);
+        text-align: center;
+        .info-bdo{
+            height: 300px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            h2{
+                font-size: 35px;
+                font-weight: bold;
+            }
+            p{
+                width: 90%;
+                font-size: 18px;
+                
+            }
+            .p-bdo{
+                    font-weight: bold;
+                }
+        }
+        .carousel{
+            width: 50%;
+            .carousel-inner{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .records-barcelona{
+        background-color: rgb(21, 14, 126);
+        color: rgb(189, 10, 10);
+        .info-records-barcelona{
+            height: 300px;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            h2{
+                font-size: 40px;
+                font-weight: bold;
+            }
+        }
+        img{
+            width: 700px;
+            height: 500px;
+        }
+    }
+    .records-argentina{
+        color: white;
+        background-color: rgb(0, 167, 233);
+        .info-records-argentina{
+            height: 300px;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            h2{
+                font-size: 40px;
+                font-weight: bold;
+            }
+        }
+        img{
+            width: 700px;
+            height: 500px;
+        }
+    }
+    .records-individuales{
+        color: white;
+        background-color: rgb(48, 106, 129);
+        .info-records-individuales{
+            height: 300px;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            h2{
+                font-size: 40px;
+                font-weight: bold;
+            }
+        }
+        img{
+            width: 700px;
+            height: 500px;
+        }
+    }
+}
