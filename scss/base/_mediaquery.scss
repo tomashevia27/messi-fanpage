@@ -544,6 +544,29 @@
     .hero-records .hero-records-titulo p{
         font-size: 20px;
     }
+
+    .contenedor-records .balones-de-oro .info-bdo h2{
+        width: 80%;
+    }
+    .contenedor-records .balones-de-oro .info-bdo p {
+        width: 80%;
+        font-size: 16px;
+    }
+    .contenedor-records .records-barcelona .info-records-barcelona ul li p {
+        font-size: 14px; 
+    }
+    .contenedor-records .records-individuales .info-records-individuales h2 {
+        font-size: 30px;
+    }
+    .contenedor-records .records-individuales .info-records-individuales ul li p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:1110px){
+    .contenedor-records .balones-de-oro .info-bdo h2{
+        font-size: 25px;
+    }
 }
 
 @media screen and (max-width:1080px){
@@ -553,12 +576,42 @@
     }
 }
 
+@media screen and (max-width: 1000px){
+    .contenedor-records{
+        height: 2000px;
+    }
+    .contenedor-records .balones-de-oro .info-bdo p {
+        font-size: 14px;
+    }
+    .contenedor-records .records-barcelona .info-records-barcelona h2 {
+        font-size: 30px;
+    }
+    .contenedor-records .records-barcelona .info-records-barcelona ul li p {
+        font-size: 12px; 
+    }
+    .contenedor-records .records-argentina .info-records-argentina ul li p {
+        font-size: 14px;
+    }
+}
+
 @media screen and (max-width:931px){
     .hero-records .hero-records-titulo h1{
         font-size: 50px;
     }
     .hero-records .hero-records-titulo p{
         font-size: 15px;
+    }
+}
+
+@media screen and (max-width:850px){
+    .contenedor-records .records-barcelona .info-records-barcelona ul li p {
+        font-size: 10px; 
+    }
+    .contenedor-records .records-individuales .info-records-individuales h2 {
+        font-size: 25px;
+    }
+    .contenedor-records .records-individuales .info-records-individuales ul li p{
+        font-size: 12px;
     }
 }
 
@@ -573,6 +626,65 @@
     }
 }
 
+@media screen and (max-width:730px){
+    .contenedor-records .balones-de-oro .info-bdo h2{
+        font-size: 20px;
+    }
+    .contenedor-records .balones-de-oro .info-bdo p {
+        font-size: 12px;
+    }
+    .contenedor-records .records-barcelona .info-records-barcelona h2 {
+        font-size: 25px;
+        margin: 0px;
+    }
+    .contenedor-records .records-barcelona .info-records-barcelona ul{
+        width: 80%;
+        margin: 5px;
+    }
+    .contenedor-records .records-barcelona .info-records-barcelona ul li p{
+        font-size: 12px;
+        margin: 0px;
+    }
+    .contenedor-records .records-argentina .info-records-argentina h2 {
+        font-size: 30px;
+    }
+    .contenedor-records .records-argentina .info-records-argentina ul li p {
+        font-size: 12px;
+    }
+    .contenedor-records .records-individuales .info-records-individuales ul li p{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:680px){
+    .contenedor-records{
+        height: 1500px;
+    }
+    .contenedor-records .balones-de-oro .info-bdo p {
+        font-size: 10px;
+    }
+    .contenedor-records .records-barcelona .info-records-barcelona h2 {
+        font-size: 20px;
+    }
+    .contenedor-records .records-barcelona .info-records-barcelona ul{
+        width: 100%;
+        margin: 0px;
+    }
+    .contenedor-records .records-barcelona .info-records-barcelona ul li p{
+        font-size: 10px;
+    }
+    .contenedor-records .records-individuales .info-records-individuales h2{
+        font-size: 20px;
+        margin: 0px;
+    }
+    .contenedor-records .records-individuales .info-records-individuales ul{
+        margin: 0px;
+    }
+    .contenedor-records .records-individuales .info-records-individuales ul li p{
+        font-size: 10px;
+    }
+}
+
 @media screen and (max-width:620px){
     .hero-records .hero-records-titulo h1{
         font-size: 30px;
@@ -581,6 +693,69 @@
     .hero-records .hero-records-titulo p{
         width: 60%;
         font-size: 15px;
+    }
+    .contenedor-records .records-individuales .info-records-individuales ul li p{
+        font-size: 10px;
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .contenedor-records{
+        height: 3000px;
+    }
+    .contenedor-records section{
+        flex-direction: column-reverse;
+        width: 450px;
+        height: 700px;
+        justify-content: space-between;
+    }
+    .contenedor-records .balones-de-oro .info-bdo{
+        height: 30%;
+        width: 100%;
+        justify-content: center;
+    }
+    .contenedor-records .balones-de-oro .carousel{
+        height: 70%;
+        width: 100%;
+    }
+    .contenedor-records .balones-de-oro .info-bdo h2{
+        width: 50%;
+    }
+    .contenedor-records .balones-de-oro .info-bdo p{
+        width: 90%;
+        font-size: 12px;
+        margin: 0px;
+    }
+
+    .contenedor-records .records-barcelona .info-records-barcelona{
+        height: 30%;
+        width: 100%;
+        justify-content: center;
+    }
+    .contenedor-records .records-barcelona img{
+        height: 70%;
+        width: 100%;
+    }
+
+    .contenedor-records .records-argentina .info-records-argentina{
+        height: 30%;
+        width: 100%;
+        justify-content: center;
+    }
+    .contenedor-records .records-argentina img{
+        height: 70%;
+        width: 100%;
+    }
+
+    .contenedor-records .records-individuales .info-records-individuales{
+        height: 30%;
+        width: 100%;
+        justify-content: center;
+    }
+    .contenedor-records .records-individuales img{
+        height: 70%;
+        width: 100%;
     }
 }
 
@@ -598,6 +773,52 @@
     .hero-records .hero-records-titulo p{
         font-size: 12px;
     }
+
+    .contenedor-records section{
+        width: 350px;
+        height: 550px;
+    }
+    .contenedor-records .balones-de-oro .info-bdo h2{
+        width: 90%;
+        font-size: 15px;
+    }
+    .contenedor-records .balones-de-oro .info-bdo p{
+        font-size: 10px;
+        margin: 5px;
+    }
+    .contenedor-records .records-barcelona .info-records-barcelona h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .contenedor-records .records-barcelona .info-records-barcelona ul{
+        list-style: none;
+        padding: 5px;
+    }
+    .contenedor-records .records-barcelona .info-records-barcelona ul li p{
+        font-size: 10px;
+    }
+    .contenedor-records .records-argentina .info-records-argentina h2 {
+        font-size: 20px;
+    }
+    .contenedor-records .records-argentina .info-records-argentina ul{
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    .contenedor-records .records-argentina .info-records-argentina ul li p {
+        font-size: 10px;
+    }
+    .contenedor-records .records-individuales .info-records-individuales h2{
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .contenedor-records .records-individuales .info-records-individuales ul{
+        list-style: none;
+        padding: 0px;
+    }
+    .contenedor-records .records-individuales .info-records-individuales ul li p{
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width:400px){
@@ -607,6 +828,44 @@
     }
     .hero-records .hero-records-titulo p{
         font-size: 10px;
+    }
+
+    .contenedor-records{
+        height: 2000px;
+    }
+    .contenedor-records section{
+        width: 250px;
+        height: 400px;
+    }
+    .contenedor-records .balones-de-oro .info-bdo h2{
+        font-size: 12px;
+        margin: 0px;
+        width: 95%;
+    }
+    .contenedor-records .balones-de-oro .info-bdo p{
+        font-size: 8px;
+        margin: 0px;
+        width: 95%;
+    }
+    .contenedor-records .records-barcelona .info-records-barcelona h2 {
+        font-size: 12px;
+        margin-bottom: 2px;
+    }
+    .contenedor-records .records-barcelona .info-records-barcelona ul li p{
+        font-size: 8px;
+    }
+    .contenedor-records .records-argentina .info-records-argentina h2 {
+        font-size: 15px;
+    }
+    .contenedor-records .records-argentina .info-records-argentina ul li p {
+        font-size: 8px;
+    }
+    .contenedor-records .records-individuales .info-records-individuales h2{
+        font-size: 12px;
+        margin-bottom: 2px;
+    }
+    .contenedor-records .records-individuales .info-records-individuales ul li p{
+        font-size: 8px;
     }
 }
 
