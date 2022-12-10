@@ -869,22 +869,6 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //! GALERIA MQ
 @media screen and (max-width:1300px){
     .main-galeria .galeria-grids{
@@ -1062,5 +1046,68 @@
     }
     .main-galeria .titulo-galeria h1{
         font-size: 15px;
+    }
+}
+
+//! CONTACTO MQ
+@media screen and (max-width:1161px){
+    .section-contacto{
+        align-items: center;
+    }
+    .section-contacto .contenedor-form{
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .section-contacto .contenedor-form {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .section-contacto{
+        height: 100vh;
+    }
+    .section-contacto .contenedor-form {
+        width: 400px;
+        height: 460px;
+    }
+    .section-contacto .contenedor-form .subtitulo {
+        font-size: 12px;
+    }
+    .section-contacto .contenedor-form .agradecimiento {
+        font-size: 14px; }
+}
+
+@media screen and (max-width: 430px){
+    .section-contacto .contenedor-form {
+        width: 300px;
+        height: 400px;
+    }
+    .section-contacto .contenedor-form h1{
+        font-size: 18px;
+    }
+    .section-contacto .contenedor-form .subtitulo {
+        font-size: 9px;
+        padding-bottom: 2px;
+    }
+    .section-contacto .contenedor-form form div {
+        padding: 2px 5px 2px 5px; }
+    .section-contacto .contenedor-form form div label{
+        font-size: 12px;
+    }
+    .section-contacto .contenedor-form form div input {
+        width: 135px;
+    }
+    .section-contacto .contenedor-form form div p {
+        font-size: 12px;
+    }
+    .section-contacto .contenedor-form form .pais {
+        font-size: 12px;
+    }
+    .section-contacto .contenedor-form .agradecimiento {
+        font-size: 11px;
+        margin-top: 5px;
     }
 }

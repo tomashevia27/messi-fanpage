@@ -15,7 +15,9 @@
         background-color: $celeste-oscuro-trans;
         border: 3px solid $celeste-claro;
         border-radius: 5%;
-        width: 40vw;
+        width: 600px;
+        height: 500px;
+        margin-left: 40px;
         h1{
             text-align: center;
             padding-top: 5px;
@@ -30,6 +32,15 @@
         form{
             div{
                 padding: 5px;
+                label{
+                    font-size: 16px;
+                }
+                input{
+                    width: 173px;
+                }
+                p{
+                    font-size: 16px;
+                }
             }
             .pais{
                 display: inline-block;
