@@ -1,25 +1,21 @@
-@import url(../base/_variables.scss);
-
 .hero-records{
     background-image: url(../img/fondo-celeste.jpg);
     width: 100vw;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex (flex, center, center);
     .hero-records-titulo{
         display: flex;
-        flex-direction: column;
+        flex-direction: column;     //! SIN MIXIN
         align-items: center;
         h1{
             font-size: 80px;
             font-weight: bold;
             margin-bottom: 30px;
-            color: rgb(48, 106, 129)
+            color: nth($colores, 2);
         }
         p{
             width: 100%;
-            color: rgb(48, 106, 129);
+            color: nth($colores, 2);
             font-size: 25px;
             text-align: center;
             margin-bottom: 0px;
@@ -30,10 +26,8 @@
 .contenedor-records{
     background-image: url(../img/fondo-celeste.jpg);
     height: 2800px;
-    display: flex;
+    @include flex (flex, space-evenly, center);
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
     section{
         width: 90%;
         display: flex;
@@ -48,10 +42,8 @@
         text-align: center;
         .info-bdo{
             width: 50%;
-            display: flex;
+            @include flex (flex, space-around, center);
             flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
             h2{
                 font-size: 35px;
                 font-weight: bold;
@@ -79,10 +71,8 @@
         color: rgb(189, 10, 10);
         .info-records-barcelona{
             width: 650%;
-            display: flex;
+            @include flex (flex, space-around, center);
             flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
             h2{
                 font-size: 40px;
                 font-weight: bold;
@@ -106,10 +96,8 @@
         background-color: rgb(0, 167, 233);
         .info-records-argentina{
             width: 50%;
-            display: flex;
+            @include flex (flex, space-around, center);
             flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
             h2{
                 font-size: 40px;
                 font-weight: bold;
@@ -132,10 +120,8 @@
         background-color: rgb(48, 106, 129);
         .info-records-individuales{
             width: 50%;
-            display: flex;
+            @include flex (flex, space-around, center);
             flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
             h2{
                 font-size: 40px;
                 font-weight: bold;

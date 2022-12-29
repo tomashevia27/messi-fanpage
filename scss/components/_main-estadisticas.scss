@@ -1,31 +1,27 @@
-@import url(../base/_variables.scss);
-
 .hero-estadisticas{
     background-image: url(../img/fondo-celeste.jpg);
     width: 100vw;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex (flex, center, center);
     .estadisticas-contenedor{
         display: flex;
-        flex-direction: column;
+        flex-direction: column;         //! FLEX SIN MIXIN
         align-items: center;
         h1{
             font-size: 80px;
             font-weight: bold;
             margin-bottom: 30px;
-            color: rgb(48, 106, 129);
+            color: nth($colores, 2);
         }
         ul{
             width: 80%;
             list-style: none;
-            display: flex;
+            display: flex;              //! FLEX SIN MIXIN
             justify-content: space-evenly;
             li{
                 a{
                     text-decoration: none;
-                    color: rgb(48, 106, 129);
+                    color: nth($colores, 2);
                     font-size: 35px;
                 }
             }
@@ -37,7 +33,7 @@
     height: 100vh;
     padding: 20px 0px 20px 50px;
     .nav-estadisticas{
-        display: flex;
+        display: flex; //! FLEX SIN MIXIN
         justify-content: space-between;
         h2{
             font-size: 70px;
@@ -48,9 +44,7 @@
             display: flex;
             margin-right: 50px;
             li{
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex (flex, center, center);
                 margin: 10px;
                 a{
                     text-decoration: none;
@@ -65,7 +59,7 @@
         width: 50%;
         font-size: 30px;
         display: flex;
-        flex-direction: column;
+        flex-direction: column;         //! SIN MIXIN
         justify-content: space-around;
         h3{
             font-size: 40px;

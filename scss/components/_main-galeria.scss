@@ -1,18 +1,14 @@
-@import url(../base/_variables.scss);
-
 .main-galeria{
     background-image: url(../img/fondo-celeste.jpg);
     .titulo-galeria{
         text-align: center;
         height: 220px;
-        display: flex;
-        justify-content: center;
-        align-items: end;
+        @include flex (flex, center, end);
         h1{
             width: 100vw;
             font-size: 50px;
             padding: 10px;
-            color: rgb(48, 106, 129);
+            color: nth($colores, 2);
         }
     }
     .galeria-grids{

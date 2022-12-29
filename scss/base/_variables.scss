@@ -1,3 +1,10 @@
-$celeste-oscuro: rgb(48, 106, 129);
-$celeste-oscuro-trans: rgba(48, 106, 129, 0.700);
-$celeste-claro: rgb(17, 176, 216);
+$colores:
+rgb(17, 176, 216),
+rgb(48, 106, 129),
+rgba(48, 106, 129, 0.700);
+
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}

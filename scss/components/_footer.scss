@@ -1,20 +1,14 @@
-@import url(../base/_variables.scss);
-
 .footer-contenedor{
-    background-color: $celeste-oscuro;
+    background-color: nth($colores, 2);
     color: white;
     height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex (flex, space-between, center);
     .info-footer{
         padding-left: 10px;
     }
     .tomas{
         width: 350px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+        @include flex (flex, center, space-around);
         padding-right: 10px;
         a{
             img{    
