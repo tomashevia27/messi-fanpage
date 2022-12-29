@@ -8,7 +8,7 @@ body {
   font-family: 'Raleway', sans-serif; }
 
 header {
-  background-color: red;
+  background-color: rgba(48, 106, 129, 0.7);
   display: flex;
   justify-content: space-between;
   align-items: center;
