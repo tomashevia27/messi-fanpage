@@ -2,13 +2,13 @@
     background-color: nth($colores, 2);
     color: white;
     height: 100px;
-    @include flex (flex, space-between, center);
+    @include flex (flex, row, space-between, center);
     .info-footer{
         padding-left: 10px;
     }
     .tomas{
         width: 350px;
-        @include flex (flex, center, space-around);
+        @include flex (flex, row, center, space-around);
         padding-right: 10px;
         a{
             img{    

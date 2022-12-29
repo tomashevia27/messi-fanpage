@@ -6,9 +6,7 @@
     background-attachment: fixed;
     color: white;
     height: 115vh;
-    display: flex;
-    flex-direction: column; //! FLEX SIN MIXIN
-    justify-content: center;
+    @include flex (flex, column, center, flex-start);
     .contenedor-form{
         background-color: nth($colores, 3);
         border: 3px solid nth($colores, 1);

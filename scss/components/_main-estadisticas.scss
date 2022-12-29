@@ -2,11 +2,9 @@
     background-image: url(../img/fondo-celeste.jpg);
     width: 100vw;
     height: 100vh;
-    @include flex (flex, center, center);
+    @include flex (flex, row, center, center);
     .estadisticas-contenedor{
-        display: flex;
-        flex-direction: column;         //! FLEX SIN MIXIN
-        align-items: center;
+        @include flex (flex, column, flex-start, center);
         h1{
             font-size: 80px;
             font-weight: bold;
@@ -16,8 +14,7 @@
         ul{
             width: 80%;
             list-style: none;
-            display: flex;              //! FLEX SIN MIXIN
-            justify-content: space-evenly;
+            @include flex (flex, row, space-evenly, flex-start);
             li{
                 a{
                     text-decoration: none;
@@ -33,8 +30,7 @@
     height: 100vh;
     padding: 20px 0px 20px 50px;
     .nav-estadisticas{
-        display: flex; //! FLEX SIN MIXIN
-        justify-content: space-between;
+        @include flex(flex, row, space-between, center);
         h2{
             font-size: 70px;
             height: 15%;
@@ -44,7 +40,7 @@
             display: flex;
             margin-right: 50px;
             li{
-                @include flex (flex, center, center);
+                @include flex(flex, row, center, center);
                 margin: 10px;
                 a{
                     text-decoration: none;
@@ -58,9 +54,7 @@
         height: 80%;
         width: 50%;
         font-size: 30px;
-        display: flex;
-        flex-direction: column;         //! SIN MIXIN
-        justify-content: space-around;
+        @include flex(flex, column, space-around, auto);
         h3{
             font-size: 40px;
         }

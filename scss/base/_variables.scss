@@ -3,8 +3,9 @@ rgb(17, 176, 216),
 rgb(48, 106, 129),
 rgba(48, 106, 129, 0.700);
 
-@mixin flex ($flex, $justify, $align){
+@mixin flex ($flex, $direc, $justify, $align){
     display: $flex;
+    flex-direction: $direc;
     justify-content: $justify;
     align-items: $align;
 }
