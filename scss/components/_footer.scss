@@ -7,8 +7,8 @@
         padding-left: 10px;
     }
     .tomas{
-        width: 350px;
-        @include flex (flex, row, center, space-around);
+        width: 400px;
+        @include flex (flex, row, space-around, center);
         padding-right: 10px;
         a{
             img{    
@@ -18,8 +18,11 @@
     }
     h4{
         font-size: 18px;
+        height: 22px;
+        margin: 0px;
     }
     p{
         font-size: 16px;
+        margin: 0px;
     }
 }
